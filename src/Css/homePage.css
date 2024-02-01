@@ -1,0 +1,256 @@
+.homepage-wrapper {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+}
+
+.homepage-wrapper .menu {
+    width: max-content;
+    padding: 0 25px;
+}
+
+.homepage-wrapper .menu .img{
+    padding: 25px 10px;
+}
+.homepage-wrapper .menu .img img{
+    width: 130px;
+    height: 55px;
+}
+
+.homepage-wrapper .menu .menu-content .content {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+
+
+.homepage-wrapper .menu .menu-content .content p {
+    font-size: 9pt;
+    -webkit-text-stroke: .6pt rgba(105, 103, 103, 0.763);
+    letter-spacing: 1pt;
+    color: rgba(105, 103, 103, 0.763);
+    transition: .4s all ease;
+}
+.homepage-wrapper .menu .menu-content .active p{
+    cursor: pointer;
+    color: rgb(4, 0, 255);
+    -webkit-text-stroke: .6pt rgb(4, 0, 255);
+}
+
+.homepage-wrapper .menu .menu-content .active:hover>p,
+.homepage-wrapper .menu .menu-content .active:focus>p {
+    color: rgb(49, 47, 156);
+}
+
+.homepage-wrapper .menu .menu-content .content img {
+    width: 20px;
+    height: 20px;
+    border-radius: 25%;
+    margin: 0 15px;
+}
+
+/*===============================================================================DESIGN OF MIDDLE PART================================================*/
+.homepage-wrapper .middle {
+    width: 90%;
+}
+
+.homepage-wrapper .middle .top {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 10px 0;
+    width: 100%;
+    justify-content: space-between
+}
+
+.homepage-wrapper .middle .top header {
+    font-size: 13pt;
+    -webkit-text-stroke-width: .6pt;
+    letter-spacing: 1pt;
+    padding: 0 10px;
+}
+
+.homepage-wrapper .middle .top div {
+    display: flex;
+    padding: 0 5px;
+    margin-right: 3%;
+}
+
+.homepage-wrapper .middle .top div img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 0 8px;
+}
+
+.homepage-wrapper .middle .upload-section {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding-top: 8%;
+}
+
+.homepage-wrapper .middle .upload-section .field {
+    width: 460px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.homepage-wrapper .middle .upload-section .field img {
+    width: 100px;
+    height: 80px;
+}
+
+.homepage-wrapper .middle .upload-section .field p {
+    font-size: 10pt;
+    -webkit-text-stroke-width: .4pt;
+    padding-top: 10px;
+}
+
+.homepage-wrapper .middle button {
+    width: 460px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: rgb(95 91 255);
+    margin-top: 15px;
+    font-size: 11pt;
+    -webkit-text-stroke-width: .6pt;
+    letter-spacing: 1.1pt;
+    color: white;
+    border: none;
+}
+.homepage-wrapper .middle button#activeBtn{
+    transition: .4s all ease;
+    cursor: pointer;
+}
+
+.homepage-wrapper .middle button#activeBtn:hover,
+.homepage-wrapper .middle button#activeBtn:focus {
+    transform: scale(.96);
+}
+.homepage-wrapper .middle .upload-section+div{
+    display: flex;
+    justify-content: center;
+}
+
+/*===============================================================================END OF DESIGN OF MIDDLE PART================================================*/
+
+/*=========================================================================TABLE DESIGN======================================================*/
+.homepage-wrapper .middle .table-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+.homepage-wrapper .middle .table-container table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1.1em;
+    min-width: 50%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.homepage-wrapper .middle .table-container table thead tr{
+    background-color: rgb(95 91 255);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+.homepage-wrapper .middle .table-container table th,
+.homepage-wrapper .middle .table-container table td{
+    padding: 12px 15px;
+}
+.homepage-wrapper .middle .table-container table tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+.homepage-wrapper .middle .table-container table tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+.homepage-wrapper .middle .table-container table tbody tr:last-of-type{
+    border-bottom: 2px solid rgb(95 91 255);
+}
+/*=========================================================================END OF TABLE DESIGN===============================================*/
+/*=========================================================================HANBURGER MENU===============================================*/
+.homepage-wrapper .middle .top .hamburger{
+    width: max-content;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+.homepage-wrapper .middle .top .hamburger div{
+    width: 20px;
+    margin-bottom: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+/*=========================================================================END OF HANBURGER MENU DESIGN=================================*/
+.homepage-wrapper div.activateMenu{
+    left: 0;
+}
+@media (max-width:694px){
+    .homepage-wrapper .middle .upload-section{
+        place-content: flex-start;
+    }
+    .homepage-wrapper .middle .upload-section .field{
+        width: 380px;
+        height: 210px;
+    }
+    .homepage-wrapper .middle .upload-section+div{
+        justify-content: flex-start;
+    }
+    .homepage-wrapper .middle button {
+        width: 392px;
+        height: 40px;
+    }
+    .homepage-wrapper .middle .table-container{
+        justify-content: flex-start;
+    }
+}
+@media (max-width:430px){
+    .homepage-wrapper .menu{
+        position: fixed;
+        left: -100%;
+        top: 7%;
+        backdrop-filter: blur(15px);
+        background-color: rgba(154, 153, 153, 0.556);
+        transition: .4s all ease;
+    }
+    .homepage-wrapper .middle{
+        width: 100%;
+    }
+    .homepage-wrapper .middle .upload-section{
+        place-content: center;
+    }
+    .homepage-wrapper .middle .upload-section .field{
+        width: 300px;
+        height: 180px;
+    }
+    .homepage-wrapper .middle .upload-section .field img{
+        width: 70px;
+        height: 50px;
+    }
+    .homepage-wrapper .middle .upload-section+div{
+        justify-content: center;
+    }
+    .homepage-wrapper .middle button {
+        width: 312px;
+        height: 40px;
+    }
+    .homepage-wrapper .middle .table-container{
+        justify-content: center;
+    }
+    .homepage-wrapper .middle .table-container table{
+        font-size: .8em;
+    }
+    .homepage-wrapper .middle .top .hamburger{
+        display: flex;
+    }
+}

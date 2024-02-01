@@ -1,0 +1,178 @@
+.signin-wrapper {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: url(../../public/Image/bgImage.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.signin-wrapper .signin-container {
+    width: 40%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.signin-wrapper .signin-container header {
+    font-size: 16pt;
+    letter-spacing: 2pt;
+    -webkit-text-stroke-width: 1.2pt;
+}
+
+.signin-wrapper .signin-container h6 {
+    font-size: 7pt;
+    margin: 5px 0;
+}
+
+.signin-wrapper .signin-container .google-div {
+    width: max-content;
+    display: flex;
+    padding: 10px 0 25px 0;
+}
+
+.signin-wrapper .signin-container .google-div button {
+    width: 175px;
+    height: 45px;
+    border-radius: 5px;
+    letter-spacing: 1pt;
+    font-size: 8pt;
+    -webkit-text-stroke-width: .4pt;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #f0e9e0;
+    transition: .4s all ease;
+}
+
+.signin-wrapper .signin-container .signin-box {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    border-radius: 8px;
+    padding: 35px 25px;
+    background-color: rgb(231 225 217);
+}
+
+.signin-wrapper .signin-container .signin-box .input-box {
+    margin-bottom: 20px;
+}
+
+.signin-wrapper .signin-container .signin-box .input-box p {
+    font-size: 8pt;
+    -webkit-text-stroke-width: .5pt;
+}
+
+.signin-wrapper .signin-container .signin-box .input-box input {
+    width: 300px;
+    height: 35px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 8px;
+    font-size: 9pt;
+    -webkit-text-stroke-width: .6pt;
+    letter-spacing: 1pt;
+}
+
+.signin-wrapper .signin-container .signin-box .input-box button {
+    width: 312px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 2pt;
+    color: white;
+    -webkit-text-stroke-width: .2pt;
+    font-size: 9pt;
+    background-color: rgb(95 91 255);
+    margin-top: 10px;
+    border: none;
+    transition: .4s all ease;
+}
+
+.signin-wrapper .signin-container .signin-box .input-box a {
+    text-decoration: none;
+    letter-spacing: 1.1pt;
+    font-size: 10pt;
+}
+
+.signin-wrapper .signin-container .signin-box .input-box a p {
+    transition: .4s all ease;
+}
+
+.signin-wrapper .signin-container .signin-box .input-box a p:hover,
+.signin-wrapper .signin-container .signin-box .input-box a p:focus {
+    transform: scale(.98);
+}
+
+.signin-wrapper .signin-container button:hover,
+.signin-wrapper .signin-container button:focus {
+    transform: scale(.96);
+}
+
+.signin-wrapper .signin-container .bottom {
+    width: 362px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.signin-wrapper .signin-container .bottom p {
+    font-size: 9pt;
+    -webkit-text-stroke-width: .4pt;
+}
+
+.signin-wrapper .signin-container .bottom a {
+    text-decoration: none;
+}
+
+/*==============================================================RESPONSIVE DESIGN=========================================================*/
+@media (max-width:954px) {
+    .signin-wrapper .signin-container {
+        width: 50%;
+    }
+}
+@media (max-width:954px) {
+    .signin-wrapper .signin-container {
+        width: 100%;
+        align-items: center;
+    }
+    .signin-wrapper{
+        background-color: rgb(95 91 255);
+        background-size: 0;
+    }
+}
+@media (max-width:374px){
+    .signin-wrapper .signin-container .google-div button{
+        width: 130px;
+        height: 40px;
+    }
+    .signin-wrapper .signin-container .google-div .google-btn{
+        height: 10px;
+    }
+    .signin-wrapper .signin-container .signin-box .input-box input{
+        width: 250px;
+    }
+    .signin-wrapper .signin-container .signin-box .input-box button{
+        width: 262px;
+    }
+    .signin-wrapper .signin-container .bottom{
+        width: 100%;
+    }
+}
+@media (max-width:315px){
+    .signin-wrapper .signin-container .signin-box{
+        padding: 35px 0;
+        width: 100%;
+    }
+}
+
+/*==============================================================RESPONSIVE DESIGN=========================================================*/
